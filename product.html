@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.0.0/css/flag-icons.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="product.css">
+
+</head>
+<body>
+
+    <!-- first navbar -->
+<nav class="top-navbar sticky-top">
+
+    <!-- Logo -->
+    <div class="logo">
+       <img src="logo.png" alt="Mērto Logo">
+       
+    </div>
+
+    <!-- Contact Info -->
+    <a class="contact-info-container" href="tel:+921234567890">
+        <i class="fa-solid fa-phone phone-icon"></i>
+        <div class="contact-text">
+            <span class="contact-label">Contact us 24/7</span>
+            <span class="contact-number">(+92) 123 456 7890</span>
+        </div>
+    </a>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <select class="category-dropdown">
+            <option>All Categories</option>
+            <option>Fashion</option>
+            <option>Electronics</option>
+            <option>Home & Kitchen</option>
+        </select>
+        <input type="search" placeholder="Search for products">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <!-- Language & Currency -->
+    <div class="lang-currency">
+        <div class="btn-group">
+            <button class="btn d-flex align-items-center gap-2"> 
+                <span class="fi fi-us"></span>English</button>
+            <button class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+            <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="#" >Français</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button class="btn">USD</button>
+            <button class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">USD</a></li>
+                <li><a class="dropdown-item" href="#">EUR</a></li>
+                <li><a class="dropdown-item" href="#">EGP</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Header Icons -->
+    <div class="header-icons">
+        <a class="icon-wrap" href="#">
+            <i class="fa-regular fa-user"></i>
+            <span class="label">Account</span>
+        </a>
+        <a class="icon-wrap" href="#">
+            <i class="fa-regular fa-heart"></i>
+            <span class="badge-count">0</span>
+        </a>
+        <a class="icon-wrap" href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="badge-count">0</span>
+        </a>
+    </div>
+
+</nav>
+
+<!-- second navbar -->
+<nav class="second-navbar">
+
+    
+    <a class="shop-categories-btn" data-bs-toggle="offcanvas" href="#offcanvasCategories" role="button">
+        <i class="fa-solid fa-bars"></i>
+        SHOP BY CATEGORIES
+    </a>
+
+    <!-- Main Nav Links -->
+    <ul class="main-nav">
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                Homepages <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Home 1</a></li>
+                <li><a class="dropdown-item" href="#">Home 2</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                Categories <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Fashion</a></li>
+                <li><a class="dropdown-item" href="#">Electronics</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                Products <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">All Products</a></li>
+                <li><a class="dropdown-item" href="#">Sale</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-bs-toggle="dropdown">
+                Pages <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-tag"></i> Best Discount</a></li>
+    </ul>
+
+    <!-- Recently Viewed -->
+    <div class="recently-viewed">
+        <div class="btn-group">
+            <button class="btn" style="font-size:13px; font-weight:600;">Recently Viewed</button>
+            <button class="btn dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">No items yet</a></li>
+            </ul>
+        </div>
+    </div>
+
+</nav>
+
+<!-- offcanvas -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasCategories">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">SHOP BY CATEGORIES</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+
+        <a href="#" class="cat-nav-link">
+            <span class="cat-left"><i class="fa-solid fa-tshirt cat-icon"></i> Fashion</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+        <a href="#" class="cat-nav-link">
+            <span class="cat-left"><i class="fa-solid fa-tablet-screen-button cat-icon"></i> Phone & Tablet</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+        <a href="#" class="cat-nav-link">
+            <span class="cat-left"><i class="fa-solid fa-laptop cat-icon"></i> Laptop & Computer</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+        <a href="#" class="cat-nav-link">
+            <span class="cat-left"><i class="fa-solid fa-tv cat-icon"></i> TV, Audio & Video</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+        <a href="#" class="cat-nav-link">
+            <span class="cat-left"><i class="fa-solid fa-spa cat-icon"></i> Beauty & Health</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+        <a href="#" class="cat-nav-link">
+            <span class="cat-left"><i class="fa-solid fa-house cat-icon"></i> Home & Kitchen</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+        <a href="#" class="cat-nav-link">
+            <span class="cat-left"><i class="fa-solid fa-camera cat-icon"></i> Camera & Photo</span>
+            <i class="fa-solid fa-chevron-right arrow"></i>
+        </a>
+
+    </div>
+</div> 
+
+<!-- this page  -->
+
+<nav  style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a class="bcrumb" href="#">Home</a></li>
+    <li class="breadcrumb-item"><a class="bcrumb" href="#">Shop</a></li>
+    <li class="breadcrumb-item"><a class="bcrumb" href="#">Phone & Tablet</a></li>
+    <li class="breadcrumb-item"><a class="bcrumb"  href="#">Tablet</a></li>
+    <li class="breadcrumb-item active" 
+    aria-current="page">Apple iPad Pro 12.9-inch, Liquid Retina XDR Display</li>
+  </ol>
+</nav>
+
+<!-- image product -->
+
+<div class="row align-items-start">
+  <!-- image -->
+<div class="col-md-6">
+   <div class="product-container">
+    <button class="expand-btn">
+        <i class="fa-solid fa-expand"></i>
+    </button>
+  
+ <div class="product-img-container">
+    <img src="images/ipadpurpl.png" class="img-fluid zoom-img" alt="iPad Pro">
+ </div>
+   </div>
+</div>
+
+    <!-- product details  -->
+    <div class=" details-container col-md-6">
+      <div class="product-details ps-md-4">
+        <a  class="brand" href="#"><p class="mb-1">Apple</p></a>
+        <h3 class="fw-bold">Apple iPad Pro 12.9-inch, Liquid <br>Retina XDR Display</h3>
+        
+        <div class="stars mb-3">
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star "></i>
+            <i class="fa-solid fa-star-half-stroke "></i>
+            <span class="small text-secondary">4.67 (3 Reviews)</span>
+            <a class="Write" href="#"> Write a review</a>
+
+        </div>
+
+        <div class="p-info">
+            <p> <i class="check fa-solid fa-check"></i>iPad Pro 2022</p>
+            <p><i class=" check fa-solid fa-check"></i>Memory 256GB</p> 
+            <p><i class=" check fa-solid fa-check"></i>Screen size 12.9″</p> 
+        </div>
+
+        <h3 class="text-dark fw-bold mb-3">$1,399</h3>
+        <span class=" stock badge -subtle text-success mb-4">In stock</span>
+
+
+        <div class="d-flex align-items-center gap-2 mb-4 ">
+            <div class=" increasing quantity-toggle d-flex align-items-center border rounded">
+                <button class="btn">-</button>
+                <span class="px-3">1</span>
+                <button class="btn">+</button>
+            </div>
+            <button class=" btnadd btn btn-dark flex-grow-1 py-2 fw-bold">+ ADD TO CART</button>
+            <button class=" btnadd2 btn btn-danger py-2 fw-bold px-4">BUY NOW</button>
+            </div>
+
+            <div class="wishing">
+            <a class="Wishlist" href="#"><i class="fa-regular fa-heart"></i> Add to Wishlist</a>
+
+            <a class="compare" href="#"> Add to compare</a>
+            </div>
+
+
+             <!-- special-offer- -->
+    <div class="special-offer-section">
+    <p class="offer-title">Special offer</p>
+    
+    <div class="offer-box">
+        <div class="offer-item">
+            <i class="fa-regular fa-credit-card"></i>
+            <span>10% off, maximum $20 when paying with PAYPAL</span>
+        </div>
+        
+        <div class="offer-item">
+            <i class="fa-solid fa-percent"></i>
+            <span>50% off or More iPad Cases, Covers & Keyboard Folios</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="under-offer">
+    <div class="code "> 
+       <span class="code1">SKU:</span> AU1D3LY0ER
+        <br>
+       <span class="code2">Categories:</span> Apple, Phone & Tablet, Tablet
+    </div>
+    <div class="icons-social">
+        <a href="#" class="social-icons"><i class="fa-brands fa-facebook-f"></i></a>
+         <a href="#" class="social-icons"><i class="fa-brands fa-pinterest-p"></i></a>
+         <a href="#" class="social-icons"><i class="fa-brands fa-twitter"></i></a>
+         <a href="#" class="social-icons"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+</div>
+
+
+
+
+            
+
+
+
+
+
+
+
+
+        
+
+            </div>
+
+        
+
+       
+
+
+
+
+
+
+
+      </div>
+
+
+<!-- images of other ipads -->
+
+   <div class="product-thumbnails d-flex  gap-4  ">
+    <img src="images/ipadcolour.png" class="thumb-img active" >
+    <img src="images/ipadpurpl.png" class="thumb-img" >
+    <img src="images/ipadblu.png" class="thumb-img" >
+    <img src="images/ipadorang.png" class="thumb-img" >
+    </div>
+
+    </div>
+
+
+    <br>
+    <br>
+    
+
+    <div class="payment-m d-flex align-items-center justify-content-between">
+     <div>
+     <h5>
+     Earn Cash Back For The Things
+     <br> You Buy Every Where
+     </h5>
+     
+          <span>Application via Merto.</span>
+     
+          <a href="#">Terms& Conditions.</a>
+        </div>
+      
+         <a href="#"class="view-more-link"><button class="view-more-btn"> VIEW MORE </button></a>
+
+        <img src="images/payments-2-1.png" alt="payment">
+
+    </div>
+ 
+
+    <br>
+ 
+
+
+    <div class="row">
+        <div class=" Frequently-Bought col-md-6"  >
+            <h4>Frequently Bought Together</h4>
+            <br>
+            <div class="Frequently">
+                
+            <a href="#"> <img src="images/ipadcolour.png" alt="ipad"></a>
+             <span>+</span>
+            <a href="#"> <img src="images/iphonegray.png" alt="iphone"></a>
+             <span>+</span>
+            <a href="#"> <img src="images/watchgray.png" alt="watch"></a>
+
+
+            </div>
+        </div>
+     
+        <div class="col-md-6">
+            <div class="infor">
+                <p class="infor-prices">This Product: Apple iPad Pro 12.9-inch, Liquid Retina XDR Display – <b>$1,399</b>
+                <br>
+                Apple iPhone 11 Pro, 256GB, Black - Fully Unlocked – <b>$352</b>
+                <br>
+                Apple Watch Series 9 GPS 45mm, Aluminum Case with Sport Band – <b>$890 </b>
+                
+                <del>$950</del></p>
+                </p>
+
+                <h3>$2,641</h3>
+
+                <a href="#"class="add-all-link"><button class="add-all-btn"> ADD ALL TO CART </button></a>
+
+            </div>
+
+        </div>
+     
+
+    </div>
+
+    <br>
+    <br>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+<div class="container-footer">
+
+
+<!-- footer logo -->
+  <div class="row ">
+    
+    <div class="col-md-3">
+    <div class="footer-logo" >
+        <div class="img-footer">
+            <img class="pic" src=logofooter.png alt="logo">
+        </div>
+
+  <div class="footer-logo-body">
+    <h6 class="card-title">
+        <i class="fa-solid fa-location-dot"></i>
+        29 SE 2nd Ave, Miami Florida<br>
+        33131, United States</h6>
+    <h6 class="footer-logo-email mb-2 ">
+        <i class="fa-regular fa-envelope"></i>
+info@example.com</h6>
+    <a href="#" class="number-logo" > (+92) 3942 7879 </a>
+  </div>
+
+      </div>
+
+
+    </div>
+
+
+    <!-- shopping info account -->
+
+    <div class="col-md-2">
+    <div class="list-group">
+  <h6 class="list-group-item" >
+   SHOPPING
+  </h6>
+  <br>
+  <a href="#" class="list-group-item ">
+    Wishlist</a>
+  <a href="#" class="list-group-item ">
+    Shop By Brand</a>
+  <a href="#" class="list-group-item ">
+    Offers</a>
+  <a href="#" class="list-group-item ">
+    Track order</a>
+   <a href="#" class="list-group-item ">
+    Size Guide</a>
+    </div>
+    </div>
+
+    
+
+    <div class="col-md-2">
+    <div class="list-group">
+  <h6 class="list-group-item">
+   INFORMATION
+  </h6>
+  <br>
+  <a href="#" class="list-group-item ">
+    Track Order</a>
+  <a href="#" class="list-group-item ">
+    Shipping&Returns</a>
+  <a href="#" class="list-group-item ">
+    About us</a>
+  <a href="#" class="list-group-item ">
+    Help</a>
+   <a href="#" class="list-group-item ">
+    Gift Cards</a>
+    </div>
+    </div>
+
+
+
+
+    <div class="col-md-2">
+    <div class="list-group">
+  <h6 class="list-group-item "> 
+    ACCOUNT
+  </h6>
+  <br>
+  <a href="#" class="list-group-item ">
+    Cart</a>
+  <a href="#" class="list-group-item ">
+    My account</a>
+  <a href="#" class="list-group-item ">
+    My orders</a>
+  <a href="#" class="list-group-item ">
+    Whishlist</a>
+   <a href="#" class="list-group-item ">
+    Affiliate Program</a>
+    </div>
+    </div>
+
+
+
+
+
+
+   <div class="col-md-3">
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Let’s keep in touch</label>
+  <input type="email" class="form-control1" id="exampleFormControlInput1" placeholder="enter your email address">
+</div>
+<br>
+<div class="mb-3">
+ <span class="footer-socialicon">
+<a href="#" class="social-link2"> <i class="fa-brands fa-facebook-f"></i></a>
+<a href="#" class="social-link2"><i class="fa-brands fa-twitter"></i></a>
+<a href="#" class="social-link2"><i class="fa-brands fa-instagram"></i></a>
+<a href="#" class="social-link2"><i class="fa-brands fa-tiktok"></i></a>
+<a href="#" class="social-link2"><i class="fa-brands fa-youtube"></i></a>
+
+
+ </span>
+</div>
+
+
+
+        
+    </div>
+
+
+
+
+</div>
+
+
+
+ <div class="row-end" >
+    <div class="col">
+        <span class="quest">
+            <i class="fa-solid fa-phone-volume text-white fs-3 mb-2"></i>
+            Didn't find what you were looking for?
+            <br>
+            <a href="#" class="Guide">contact Us</a>
+        </span>
+    </div>
+
+    <div class="col">
+         <span class="quest">
+            <i class="fa-regular fa-face-smile text-white fs-3 mb-2"></i>
+           How can we help you today?
+           <br>
+            <a href="#" class="Guide">Help Center</a>
+    </div>
+    <div class="col">
+         <span class="quest">
+            <i class="fa-solid fa-life-ring text-white fs-3 mb-2" ></i>
+           
+           We’d love to hear what you think!
+           <br>
+            <a href="#" class="Guide">Give Feedback</a>
+    </div>
+  </div>
+
+
+  <div class="d-flex justify-content-between align-items-center py-4 flex-wrap ">
+    <p class=" text-secondary small">Copyright © Merto. All Rights Reserved</p>
+    <div class="payment-icons d-flex gap-2">
+        <i class="fa-brands fa-cc-paypal text-white fs-2"></i>
+         <i class="fa-brands fa-cc-apple-pay text-white fs-2"></i>
+        <i class="fa-brands fa-cc-visa text-white fs-2"></i>
+        <i class="fa-brands fa-cc-mastercard text-white fs-2"></i>
+         <i class="fa-brands fa-amazon-pay text-white fs-2"></i>
+        <i class="fa-brands fa-cc-amex text-white fs-2"></i>
+       
+    
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+</body>
+</html>
