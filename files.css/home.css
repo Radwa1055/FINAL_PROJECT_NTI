@@ -471,6 +471,151 @@ body {
 }
 
 
+/* slider */
+
+
+.hero-section {
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+
+.main-slider {
+    background-color: #e5533c;
+    color: white;
+    padding: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+}
+
+.main-slider .content {
+    flex: 1;
+    z-index: 2;
+}
+
+.main-slider .offer-tag {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.main-slider h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.btn-shop {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.main-slider .image-box img {
+    max-width: 450px;
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+
+
+.slider-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 60px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+
+.side-banners {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-banner { background-color: #f3f3f3; }
+.bottom-banner { background-color: #ececec; }
+
+.banner-content { z-index: 2; width: 60%; }
+
+.banner-content .category {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+.banner-content h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #111;
+}
+
+.btn-outline {
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 8px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn-outline:hover { background: #000; color: #fff; }
+
+.banner-item img {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.price-tag {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff2d2d;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    z-index: 3;
+}
+
 
 
 
