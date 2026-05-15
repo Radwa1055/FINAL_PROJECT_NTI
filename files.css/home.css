@@ -1010,3 +1010,136 @@ body {
 
 /* hoodie */
 
+
+.badge-glow {
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    z-index: 10;
+    background-color: #ff0000;
+    color: white;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(212, 11, 11, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(255, 0, 0, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 0, 0, 0); }
+}
+
+/* right */
+.product-info-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-right: 50px; 
+}
+
+.product-features {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    color: #0c0c0c;
+}
+
+.product-features li::before {
+    content: "✓ ";
+    color: green;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.current-price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.btn-buy {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-buy:hover {
+    background: #ffffff;
+    border: #000 solid 1px;
+    color: #000;
+}
+
+
+/* new arrival final part */
+
+.product-card {
+    position: relative; 
+    background: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+
+.product-card:hover {
+    border: 1px solid #eee;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    z-index: 10; 
+}
+
+
+.product-hover-content {
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    border-top: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+
+.product-card:hover .product-hover-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.add-cart-btn {
+    font-size: 0.8rem;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-right: 10px;
+    background-color: #f1f3f5;
+    border: none;
+}
+
+.hover-icons i {
+    margin: 0 5px;
+    cursor: pointer;
+    color: #666;
+    
+}
